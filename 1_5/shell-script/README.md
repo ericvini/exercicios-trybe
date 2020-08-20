@@ -1,0 +1,1 @@
+# O script imprime uma frase utilizando o for.
