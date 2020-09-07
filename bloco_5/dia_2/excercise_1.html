@@ -67,34 +67,66 @@
 
         //exercise-2
         let divMainContent = document.createElement("div");
-        divMainContent.className="main-content";
+        divMainContent.className = "main-content";
         document.body.appendChild(divMainContent);
 
         //exercise-3
         let divCenter = document.createElement("div");
-        divCenter.className="center-content";
+        divCenter.className = "center-content";
         divMainContent.appendChild(divCenter);
 
         //exercise-4
         let elementP = document.createElement("p");
-        elementP.innerHTML="Olá meu nome é Éric, sou estudante na Trybe";
+        elementP.innerHTML = "Olá meu nome é Éric, sou estudante na Trybe";
         divCenter.appendChild(elementP);
 
         //exercise-5
         let divLeftContent = document.createElement("div");
-        divLeftContent.className="left-content";
+        divLeftContent.className = "left-content";
         divMainContent.appendChild(divLeftContent);
 
         //exercise-6
         let divRightContent = document.createElement("div");
-        divRightContent.className="right-content";
+        divRightContent.className = "right-content";
         divMainContent.appendChild(divRightContent);
 
         //exercise-7
         let imageSmall = document.createElement("img");
-        imageSmall.src= "https://picsum.photos/200";
-        imageSmall.className="small-image";
+        imageSmall.src = "https://picsum.photos/200";
+        imageSmall.className = "small-image";
         divLeftContent.appendChild(imageSmall);
+
+        //exercise-8
+        let elementList = document.createElement("ul");
+        divRightContent.appendChild(elementList);
+        let arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+        for (let i in arrayNumbers) {
+
+            let elementLi = document.createElement("li");
+            elementLi.innerHTML = arrayNumbers[i];
+            elementList.appendChild(elementLi);
+
+        }
+
+        for (let i = 0; i < 3; i++) {
+
+
+            let elementH3 = document.createElement("h3");
+            elementH3.innerHTML = "Olá" + i;
+            divMainContent.appendChild(elementH3);
+
+
+
+        }
+
+        //parte-2
+
+       let title=document.getElementsByTagName("h1")[0];
+       title.className="title";
+
+
+
+
 
     </script>
 </body>
