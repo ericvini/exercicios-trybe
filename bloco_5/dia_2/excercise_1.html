@@ -59,9 +59,43 @@
 
 <body>
     <script>
+
+        //exercise-1
         let titulo = document.createElement("h1");
         titulo.innerHTML = "Exercício 5.2 - JavaScript DOM ";
         document.body.appendChild(titulo);
+
+        //exercise-2
+        let divMainContent = document.createElement("div");
+        divMainContent.className="main-content";
+        document.body.appendChild(divMainContent);
+
+        //exercise-3
+        let divCenter = document.createElement("div");
+        divCenter.className="center-content";
+        divMainContent.appendChild(divCenter);
+
+        //exercise-4
+        let elementP = document.createElement("p");
+        elementP.innerHTML="Olá meu nome é Éric, sou estudante na Trybe";
+        divCenter.appendChild(elementP);
+
+        //exercise-5
+        let divLeftContent = document.createElement("div");
+        divLeftContent.className="left-content";
+        divMainContent.appendChild(divLeftContent);
+
+        //exercise-6
+        let divRightContent = document.createElement("div");
+        divRightContent.className="right-content";
+        divMainContent.appendChild(divRightContent);
+
+        //exercise-7
+        let imageSmall = document.createElement("img");
+        imageSmall.src= "https://picsum.photos/200";
+        imageSmall.className="small-image";
+        divLeftContent.appendChild(imageSmall);
+
     </script>
 </body>
 
