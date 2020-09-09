@@ -1,22 +1,12 @@
+function verificaPalindrome(palavra) {
+  const str = palavra;
+  const strReverse = str.split('').reverse().join('');
 
-
-function verificaPalindrome( palavra){
-    let str=palavra;
-    let strReverse = str.split('').reverse().join(''); 
-    
-    
-    if(str===strReverse){
-    
+  if (str === strReverse) {
     return true;
-    
-    }else{
-    
-    return false;
-    
-    }
-    
-
+  }
+  return false;
 }
 
-let res=verificaPalindrome("reviver");
+const res = verificaPalindrome('reviver');
 console.log(res);
