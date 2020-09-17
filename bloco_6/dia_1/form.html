@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="/action_page.php">
+    <form action="" method="POST">
         <fieldset>
             <legend>Dados Pessoais :</legend>
             <label for="name">Name:</label>
@@ -30,10 +30,31 @@
             <input type="" id="estado" name="estado" required="required"><br><br>
 
             <p>Tipo:</p>
-            <input type="radio" id="casa1" name="moradia" value="30">
+            <input type="radio" id="casa1" name="moradia" value="casa">
             <label for="casa1">Casa</label><br>
-            <input type="radio" id="apartamento1" name="moradia" value="60">
+            <input type="radio" id="apartamento1" name="moradia" value="apartamento">
             <label for="apartamento1">Apartamento</label><br><br>
+
+            <fieldset>
+                <legend>Dados do seu último emprego</legend><br>
+                <label for="texto">Resumo do currículo :</label><br>
+                <textarea id="texto" name="texto" required="required" maxlength="1000" rows="5"
+                    cols="50"></textarea><br><br>
+
+                <label for="cargo">Cargo:</label>
+                <input type="text" id="cargo" name="cargo" required="required" maxlength="40"><br><br>
+
+                <label for="descricao-cargo">Descrição do cargo </label>
+                <input type="text" id="descricao-cargo" name="descricao-cargo" required="required"
+                    maxlength="500"><br><br>
+
+                <label for="data">Data de início:</label>
+                <input type="date" id="data" name="data" required="required"><br><br>
+
+
+
+            </fieldset><br>
+
             <input type="submit" value="Submit">
         </fieldset>
     </form>
