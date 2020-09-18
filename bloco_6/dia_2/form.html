@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-datepicker.pt-BR.min.js"></script>
+
+</head>
+
+<body>
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Dados Pessoais :</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" maxlength="40" required="required"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required="required" maxlength="50"><br><br>
+
+            <label for="cpf">CPF:</label>
+            <input type="number" id="cpf" name="cpf" required="required" maxlength="11"><br><br>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required="required" maxlength="200"><br><br>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required="required" maxlength="28"><br><br>
+
+            <label for="estado">Estado:</label>
+            <input type="" id="estado" name="estado" required="required"><br><br>
+
+            <p>Tipo:</p>
+            <input type="radio" id="casa1" name="moradia" value="casa">
+            <label for="casa1">Casa</label><br>
+            <input type="radio" id="apartamento1" name="moradia" value="apartamento">
+            <label for="apartamento1">Apartamento</label><br><br>
+
+            <fieldset>
+                <legend>Dados do seu último emprego</legend><br>
+                <label for="texto">Resumo do currículo :</label><br>
+                <textarea id="texto" name="texto" required="required" maxlength="1000" rows="5"
+                    cols="50"></textarea><br><br>
+
+                <label for="cargo">Cargo:</label>
+                <input type="text" id="cargo" name="cargo" required="required" maxlength="40"><br><br>
+
+                <label for="descricao-cargo">Descrição do cargo </label>
+                <input type="text" id="descricao-cargo" name="descricao-cargo" required="required"
+                    maxlength="500"><br><br>
+
+                <label for="data">Data de início:</label>
+                <input type="text" id="data" name="data" required="required"><br><br>
+
+
+
+            </fieldset><br>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
