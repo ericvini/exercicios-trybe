@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-datepicker.pt-BR.min.js"></script>
+    <script src="./path/to/just-validate.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+</head>
+
+<body>
+   
+    <form action="#" class="js-form form">
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="name">Enter your name</label>
+            <input type="text" class="form__input form-control" placeholder="Enter your name" autocomplete="off" data-validate-field="name" name="name" id="name" maxlength="40">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">Enter your email</label>
+            <input type="email" class="form__input form-control" placeholder="Enter your email" autocomplete="off" data-validate-field="email" name="email" id="email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cpf">Enter your CPF</label>
+          <input type="number" class="form__input form-control" placeholder="Enter your CPF" autocomplete="off" data-validate-field="cpf" name="cpf" id="cpf">
+        </div>
+        <div class="form-group">
+          <label for="adress">Enter your adress</label>
+          <input type="text" class="form__input form-control" data-validate-field="adress" id="adress" maxlength="200"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="adress">Enter your city</label>
+          <input type="text" id="city" class="form__input form-control" data-validate-field="city" max="28">
+        </div>
+        <div class="form-group">
+          <label><input type="checkbox" class="form__checkbox" data-validate-field="checkbox2" checked>I agree</label>
+        </div>
+        <div class="form-group">
+          <label><input type="radio" name="radio" class="form__radio" data-validate-field="radio">Male</label>
+          <br>
+          <label><input type="radio" name="radio" class="form__radio" data-validate-field="radio">Female</label>
+        </div>
+        <button class="form__btn btn btn-primary">SUBMIT</button>
+      </form>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
