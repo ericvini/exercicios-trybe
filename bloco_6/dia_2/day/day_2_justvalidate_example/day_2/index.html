@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  </head>
+
+  <body>
+    <header>Dev/Agas</header>
+    <form action="#" enctype="multipart/form-data" class="cv-content">
+      <fieldset class="container-xl">
+        <div class="form-group">
+          <label for="" class="label-content">Nome:</label>
+          <input id="name" name="name" type="text" minLength="2" maxlength="40" required="required"
+            class="line-content form-control" data-validate-field="name">
+        </div>
+        <div class="form-group">
+          <label for="mail" class="label-content">Email:</label>
+          <input id="mail" name="mail" type="email" maxlength="50" required="required" class="line-content form-control"
+            data-validate-field="email">
+        </div>
+        <div class="form-group">
+          <label for="" class="label-content">Endereço:</label>
+          <input id="address" name="address" type="text" maxlength="200" required="required"
+            class="line-content form-control" data-validate-field="text">
+        </div>
+        <div class="form-group">
+          <label for="" class="label-content">Cidade:</label>
+          <input id="city" type="text" maxlength="200" required="required" class="line-content form-control"
+            data-validate-field="city" name="city">
+        </div>
+        <div class="form-group">
+          <label for="state" class="label-content">Estado:</label>
+          <select id="state" name="estado" id="state" required="required" class="line-content form-control">
+            <option selected value="">vazio</option>
+          </select>
+        </div>
+        <p class="label-content tipo">Tipo:</p>
+        <div class="form-check form-check-inline">
+          <input id="house" name="tipo" value="Casa" type="radio" required="required" class="form-check-input"
+            data-validate-field="radio">
+          <label for="house" class="form-check-label"> Casa</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input id="apartment" name="tipo" value="Apartamento" type="radio" required="required"
+            class="form-check-input">
+          <label for="apartment" class="form-check-label" data-validate-field="radio"> Apartamento</label>
+        </div>
+      </fieldset>
+      <fieldset class="carrer-info container-xl">
+        <div class="form-group">
+          <label for="" class="label-content">Resumo:</label>
+          <textarea id="resume" name="resumo" id="resume" cols="30" rows="5" maxlength="100" required="required"
+            class="line-content form-control"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="" class="label-content">Cargo:</label>
+          <input id="ocuppation" type="text" maxlength="40" required="required" class="line-content form-control"
+            data-validate-field="cargo">
+        </div>
+        <div class="form-group">
+          <label for="" class="label-content">Descrição do Cargo:</label>
+          <input id="description" type="text" maxlength="10" required="required" class="line-content form-control"
+            data-validate-field="text">
+        </div>
+        <div class="form-group">
+          <label for="" class="label-content">Data de Início: </label>
+          <input id="initial-date" type="text" required="required" class="line-content form-control">
+        </div>
+      </fieldset>
+      <section class="button-content container-xl">
+        <div class="form-group">
+          <button id="validate" type="submit" class="btn btn-primary form-group form-control">Enviar</button>
+        </div>
+        <div><button id="clear" class="btn btn-primary form-group form-control">Clear</button></div>
+      </section>
+    </form>
+    <section id="resume-content">
+      <h1><strong>Resumo:</strong></h1>
+      <hr>
+    </section>
+    <script src="js/just-validate.min.js"></script>
+    <!-- <script src="pikaday.js"></script> -->
+    <script src="script.js"></script>
+  </body>
+
+</html>

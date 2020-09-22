@@ -1,0 +1,52 @@
+body {
+  background-color:rgb(234, 237, 240);
+  color: rgb(93, 96, 99);
+  font-size: 16px;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+header {
+  background-color: rgb(246, 247, 248);
+  font-size: 40px;
+  height: 80px;
+  margin: 0 auto 60px auto;
+  padding-top: 20px;
+  text-align: center;
+  width: 80%;
+}
+
+form {
+  background-color: rgb(246, 247, 248);
+  border: 1px solid black;
+  margin: 0 auto 20px auto;
+  width: 80%;
+}
+
+.label-content {
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+.label-content.tipo {
+  margin-bottom: 15px;
+}
+
+#resume-content {
+  width: 80%;
+  margin: 5px auto 5px auto;
+  text-align: left;
+}
+#resume-content h1 {
+  width: 80%;
+  border-bottom: 2px solid black;
+  margin: 0 auto 20px auto;
+  text-align: center;
+
+}
+
+.line-resume-content {
+  border-bottom: 1px solid black;
+  display: inline-block;
+  margin: 15px 20px 10px auto;
+  width: 100%;
+}
