@@ -10,4 +10,4 @@ function sum(a, b) {
 
 const expected = sum(0,0);
 
-assert.equal(expected,0,'4+5 é 9');
+assert.equal(expected,1,'4+5 é 9');
