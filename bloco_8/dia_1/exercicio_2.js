@@ -47,7 +47,7 @@ const books = [
     genre: 'Terror',
     author: {
       name: 'Stephen King',
-      birthYear: 1947,
+      birthYear: 1947
     },
     releaseYear: 1986,
   },
@@ -63,7 +63,16 @@ const books = [
   },
 ];
 
-function authorBornIn1947() {
- return books.find(book =>book.author.birthYear===1947).author.name;
+function smallerName() {
+  let smallerNameBook='';
+  
+  books.forEach((book) => {
+    if (!smallerNameBook || book.name.length < smallerNameBook.length) {
+      smallerNameBook = book.name;
+    }
+  });
+  
+  return smallerNameBook;
 }
-assert.equal(authorBornIn1947(), 'Stephen King');
+
+assert.equal(smallerName(), 'Duna');
